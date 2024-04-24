@@ -1,0 +1,56 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+
+.login-container h1 {
+  color: darkorange;
+}
+
+.login-container form {
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid darkorange;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkorange;
+  color: black;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: orange;
+}
+
+.login-container p {
+  color: white; 
+}
