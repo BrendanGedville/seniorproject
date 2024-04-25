@@ -15,7 +15,7 @@ function Dashboard() {
         const fetchUser = async () => {
             setLoading(true);
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:3001/api/profile', {
+            const response = await fetch('https://password-manager1-d7a6dad7b8d2.herokuapp.com/api/profile', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -37,7 +37,7 @@ function Dashboard() {
     }, []);
 
     const fetchPasswords = async (token) => {
-        const response = await fetch('http://localhost:3001/api/passwords', {
+        const response = await fetch('https://password-manager1-d7a6dad7b8d2.herokuapp.com/api/passwords', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -80,7 +80,7 @@ function Dashboard() {
 
     const handleDelete = async (id) => {
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:3001/api/passwords/${id}`, {
+        const response = await fetch(`https://password-manager1-d7a6dad7b8d2.herokuapp.com/api/passwords/${id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -102,7 +102,7 @@ function Dashboard() {
 
     const handleUpdate = async (id) => {
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:3001/api/passwords/${id}`, {
+        const response = await fetch(`https://password-manager1-d7a6dad7b8d2.herokuapp.com/api/passwords/${id}`, {
             method: 'PUT',
             headers: {
                 'Authorization': `Bearer ${token}`,

@@ -1,17 +1,19 @@
 const mariadb = require('mariadb');
 
-// Define your database configuration directly
+
 const dbConfig = {
-    host: 'localhost', // Replace 'your_db_host' with your actual database host
-    user: 'pm_user', // Replace 'your_db_user' with your actual database user
-    password: 'your_password', // Replace 'your_db_password' with your actual database password
-    database: 'password_manager', // Replace 'your_db_name' with your actual database name
+    host: 'un0jueuv2mam78uv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', 
+    user: 'p3opsbkosw4r2e0w', 
+    password: 'fijtps4yo7z4ne3n', 
+    database: 'bqvvpiz2dxr0cbtl',
     connectionLimit: 10
 };
 
-// Logging the database configuration (remove or comment this line in production for security reasons)
+
 console.log(dbConfig);
 
 const pool = mariadb.createPool(dbConfig);
 
 module.exports = pool;
+
+mysql://p3opsbkosw4r2e0w:fijtps4yo7z4ne3n@un0jueuv2mam78uv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/bqvvpiz2dxr0cbtl

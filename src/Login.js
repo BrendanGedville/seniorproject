@@ -11,7 +11,7 @@ function Login() {
     const password = formData.get('password');
 
     try {
-      const response = await fetch('http://localhost:3001/api/login', {
+      const response = await fetch('https://password-manager1-d7a6dad7b8d2.herokuapp.com/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

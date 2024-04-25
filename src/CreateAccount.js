@@ -13,7 +13,7 @@ function CreateAccount() {
     const userData = { username, email, password };
 
     try {
-      const response = await fetch('http://localhost:3001/api/accounts/create', {
+      const response = await fetch('https://password-manager1-d7a6dad7b8d2.herokuapp.com/api/accounts/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
